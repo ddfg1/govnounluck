@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Gaming Beast">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="54%" r="60%">
+      <stop offset="0" stop-color="#9338ff" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#19d776" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#08000f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="case" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#40305d"/>
+      <stop offset="0.45" stop-color="#171027"/>
+      <stop offset="1" stop-color="#05030a"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#6f43c5" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#090212" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop offset="0" stop-color="#9338ff"/>
+      <stop offset="1" stop-color="#19d776"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.55"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#9338ff" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="640" height="420" fill="#11051f"/>
+  <ellipse cx="320" cy="320" rx="245" ry="90" fill="url(#glow)"/>
+  <g opacity="0.55">
+    <circle cx="88" cy="104" r="3" fill="#9338ff"/><circle cx="530" cy="82" r="4" fill="#19d776"/>
+    <circle cx="552" cy="250" r="2" fill="#9338ff"/><circle cx="126" cy="314" r="2" fill="#fff"/>
+    <path d="M84 276h86M458 118h70M102 142h34" stroke="#9338ff" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <g filter="url(#shadow)" transform="translate(186 44)">
+    <path d="M72 14h236c16 0 29 13 29 29v282c0 16-13 29-29 29H72c-16 0-29-13-29-29V43c0-16 13-29 29-29z" fill="url(#case)" stroke="#9338ff" stroke-width="3"/>
+    <path d="M72 41h154c10 0 18 8 18 18v250c0 10-8 18-18 18H72c-10 0-18-8-18-18V59c0-10 8-18 18-18z" fill="url(#glass)" stroke="rgba(255,255,255,.14)"/>
+    <path d="M265 41h43c6 0 11 5 11 11v263c0 6-5 11-11 11h-43c-6 0-11-5-11-11V52c0-6 5-11 11-11z" fill="#0a0611" stroke="rgba(255,255,255,.16)"/>
+    <g fill="none" stroke="url(#neon)" stroke-linecap="round">
+      <path d="M84 252h126" stroke-width="9" opacity="0.86"/>
+      <path d="M84 275h94" stroke-width="6" opacity="0.65"/>
+      <path d="M84 297h118" stroke-width="5" opacity="0.48"/>
+      <path d="M93 72h118v84H93z" stroke-width="4" opacity="0.34"/>
+    </g>
+    <g>
+      <circle cx="150" cy="125" r="48" fill="#0b0614" stroke="url(#neon)" stroke-width="7"/>
+      <circle cx="150" cy="125" r="23" fill="#9338ff" opacity="0.7"/>
+      <path d="M150 83c16 18 13 34 0 42M192 125c-18 16-34 13-42 0M150 167c-16-18-13-34 0-42M108 125c18-16 34-13 42 0" stroke="#fff" stroke-opacity="0.55" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="286" cy="92" r="30" fill="#0b0614" stroke="url(#neon)" stroke-width="6"/>
+      <circle cx="286" cy="184" r="30" fill="#0b0614" stroke="url(#neon)" stroke-width="6"/>
+      <circle cx="286" cy="276" r="30" fill="#0b0614" stroke="url(#neon)" stroke-width="6"/>
+      <circle cx="286" cy="92" r="12" fill="#9338ff"/><circle cx="286" cy="184" r="12" fill="#9338ff"/><circle cx="286" cy="276" r="12" fill="#9338ff"/>
+    </g>
+  </g>
+  <ellipse cx="320" cy="367" rx="170" ry="18" fill="#000" opacity="0.35" filter="url(#blur)"/>
+</svg>
